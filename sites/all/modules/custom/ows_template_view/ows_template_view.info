@@ -1,0 +1,5 @@
+name = OWS Templates View
+description = This module is used to view templates in desired manner.
+core = 7.x
+package = OWS
+version = "7.x-1.0"

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ows_templates feature.
+ */
+
+include_once 'ows_templates.features.inc';

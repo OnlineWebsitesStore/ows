@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * Implements hook_manu().
+ */
+function ows_template_view_menu() {
+
+	$items['json/template/data'] = array(
+		'page callback' => 'ows_templates_view_json_template_data_callback',
+		'access arguments' => array('access content'),
+		'file' => 'ows_templates_view.inc',
+	);
+
+	$items['json/alltemplate/data'] = array(
+		'page callback' => 'ows_templates_view_json_alltemplate_data_callback',
+		'access arguments' => array('access content'),
+		'file' => 'ows_templates_view.inc',
+	);
+
+	$items['templates'] = array(
+		'title' => t('Templates'),
+		'page callback' => 'ows_templates_view_page_callback',
+		'access arguments' => array('access content'),
+		'file' => 'ows_templates_view.inc',
+	);
+
+	return $items;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ows_template_view_theme() {
+	return array(
+		'ows_templates' => array(
+			'template' => 'ows-template-view'
+		),
+	);
+} 
