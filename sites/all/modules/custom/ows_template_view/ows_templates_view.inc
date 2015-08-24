@@ -50,5 +50,6 @@ function ows_templates_view_page_callback() {
 	drupal_add_library('angularjs', 'angularjs');
 	$path = drupal_get_path('module', 'ows_template_view');
 	drupal_add_js($path . '/js/templates/app.js', array('type' => 'file'));
+	drupal_add_js($path . '/js/bootstrap/ui-bootstrap-tpls-0.13.3.min.js', array('type' => 'file'));
 	return theme('ows_templates');
 } 

@@ -12,6 +12,10 @@
 				 	</div>
 			 	</div>
 			</div>
-		</div>
+            <div class="pagination-centered">
+                <pagination total-items="totalItems" ng-model="currentPage" items-per-page="itemsPerPage" ng-change="pageChanged(currentPage)"></pagination>
+            </div>
+        </div>
 	</div>
 </div>
+
